@@ -1,0 +1,67 @@
+html{
+    font-size: 62.5%;
+    --white: #EAE0D5;
+    --main-color: #88527F;
+    --sec-color: #9F87AF;
+    --third-color: #614344;
+    --accent-color: #B1DDF1;
+    --main-font: 'Signika', sans-serif;
+    --second-font:  'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: var(--main-font);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.gallery__element{
+    /* border-radius: 15px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--sec-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__element-img img{
+    width: 35vw;
+    max-height: 180px;
+    max-width: 135px;
+    /* border-radius: 15px; */
+}
+
+.gallery__element-info{
+    margin-top: 5px;
+    color: var(--white);
+}
+
+.gallery__element-info:hover{
+    color: var(--accent-color);
+}
+
+.gallery__element-info_name{
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+
+.gallery__element-info_price{
+    font-family: var(--second-font);
+    font-size: 1.6rem;
+}
