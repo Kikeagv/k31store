@@ -39,6 +39,8 @@ header a:hover{
 header img{
     height: 8vh;
     margin-left: 5px;
+    min-height: 42px;
+    max-height: 90px;
 }
 
 header nav{

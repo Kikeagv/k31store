@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- css -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/shop/products/styles/style.css">
+    <!-- end css -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@500&display=swap" rel="stylesheet">
+    <!-- end fonts -->
+   
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <a href="/index.html">
+        <img src="/assets/logo.svg" alt="K31 logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/shop/index.html">Tienda</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product">
+            <div class="product__img">
+                <img src="/assets/products/tshirts/tshirt__example.png" alt="tshirt">
+            </div>
+            <div class="product__info">
+                <div class="product__info-name">Product name</div>
+                <div class="product__info-price">$10.00</div>
+                <div class="product__info-code">Codigo de producto: TS-001</div>
+            </div>
+
+            <div class="product__buy">
+
+                <a href="#">
+                    <button class="product__buy--button" onclick="myFunction()">
+                        Comprar
+                    </button>
+                    
+                </a>
+
+                <input type="text" value="TS-001" id="myInput">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#"><img src="/assets/facebook.svg" alt=""></a>
+        <a href="#"><img src="/assets/instagram.svg" alt=""></a>
+    </footer>
+
+    <script>
+        function myFunction() {
+    /* Get the text field */
+    var copyText = document.getElementById("myInput");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+  
+    /* Alert the copied text */
+    alert("Codigo de producto copiado");
+}
+    </script>
+
+</body>
+</html>

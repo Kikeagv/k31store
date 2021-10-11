@@ -1,0 +1,104 @@
+html{
+    font-size: 62.5%;
+    --white: #EAE0D5;
+    --main-color: #88527F;
+    --sec-color: #9F87AF;
+    --third-color: #614344;
+    --accent-color: #B1DDF1;
+    --main-font: 'Signika', sans-serif;
+    --second-font:  'Open Sans', sans-serif;
+}
+
+.product{
+    margin-top: 20px;
+}
+
+.product img{
+    height: 65vh;
+    /* min-width: 250px; */
+    max-width: 320px;
+    min-height: 345px;
+    box-shadow: rgba(240, 46, 170, 0.4) 2.5px 2.5px, rgba(240, 46, 170, 0.3) 5px 5px, rgba(240, 46, 170, 0.2) 10px 10px, rgba(240, 46, 170, 0.1) 15px 15px, rgba(240, 46, 170, 0.05) 20px 20px;
+}
+
+.product__img{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.product__info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.product__info-name{
+    font-family: var(--main-font);
+    font-size: 3rem;
+}
+
+.product__info-price{
+    font-family: var(--second-font);
+    font-size: 2.5rem;
+    font-style: oblique;
+}
+
+.product__info-code{
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+}
+
+.product__buy{
+    text-align: center;
+}
+
+.product__buy--button{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #3d348b;
+    box-shadow: 0 5px #2c0b8e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product__buy--button:hover{
+    box-shadow: 0 3px #2c0b8e;
+    top: 1px;
+}
+
+  .product__buy--button:active{
+    box-shadow: 0 0 #2c0b8e;
+    top: 5px;
+}
+
+#myInput{
+    display: none;
+}
+
+footer{
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+footer img{
+    height: 8vh;
+    min-height: 50px;
+    max-height: 55px;
+    padding: 5px;
+}
+
+
+
+
